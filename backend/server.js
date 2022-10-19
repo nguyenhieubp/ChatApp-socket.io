@@ -30,7 +30,7 @@ app.use((err, req, res, next) => {
   });
 });
 
-const server = app.listen(4000, () => {
+const server = app.listen(process.env.PORT || 4000, () => {
   console.log("Backend-start");
 });
 
